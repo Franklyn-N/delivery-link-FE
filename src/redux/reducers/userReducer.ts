@@ -15,7 +15,7 @@ const INIT_STATE = {
     }
 }
 
-const userReducer = (state = INIT_STATE, action) => {
+const userReducer = (state = INIT_STATE, action: { type: any; payload: any; }) => {
     switch (action.type) {
         case userActionTypes.SIGNUP_SUCCESS:
           return {
